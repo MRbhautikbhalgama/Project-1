@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lookbook-gallery {
+  .a11y-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+  .a11y-only.focusable:active,
+  .a11y-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+  img {
+  min-width: 10em;
+  max-width: 100%;
+  display: block;
+  background: #ddd;
+}
+  .model {
+  margin: 0;
+  position: relative;
+  
+  .model--caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,.85);
+    padding: .35em 1.2em .25em .9em;
+    justify-self: start;
+    
+    .model-hed {
+      font-size: 1.25em;
+      margin: .5em 0;
+      font-family: Lora, serif;
+      
+      a {
+        color: #fff;
+        text-decoration-color: rgba(255,255,255,.5);
+      }
+    }
+    p {
+      font-size: .9375em;
+      font-family: "Open Sans",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.5;
+      margin: 0 0 .5em 0;
+    }
+  }
+}
+  @media( min-width: 45em ) {
+  .lookbook-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .model {
+    flex: 47.5%;
+    margin: .5%;
+  }
+  }
+  @media( min-width: 65em ) {
+  .model {
+    flex: 24.25% 0;
+    margin: .25%;
+  }
+  @supports( display: grid ) {
+    .lookbook-grid {
+      display: grid;
+      grid-gap: .5em;
+      grid-template-columns: repeat( 4, minmax( 200px, 1fr ) );
+    }
+    .model {
+      margin: 0;
+    }
+    .model:nth-of-type(4n-1) {
+      grid-row-end: span 2;
+      grid-column-end: span 2;
+    }
+  }
+  }
+}
+.img{
+    width: 500px;
+    height: 500px;
+}
+    </style>
+</head>
+<body>
+   <center>   
+<div class="lookbook-gallery">
+    <h2 class="look-hed">Shopping Cart</h2>
+    <div class="lookbook-grid" role="region">
+      
+      <figure class="model">
+        <img class="img" src="Aaloo-Tikki.png" />
+        <figcaption class="model--caption">
+          <h3 class="model-hed">For Buy Tap Here<br><a href="aaloo.html">Aaloo-Tikki-Burger</a></h3>
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img class="img" src="Bacon-Cheese.png" />
+        <figcaption class="model--caption">
+          <h3 class="model-hed">For Buy Tap Here<br><a href="Bacon-Cheese.html">Bacon-cheese-Burger</a></h3>
+          
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img  src="Le-big-king.png" />
+         <figcaption class="model--caption">
+         
+         <h3 class="model-hed"> For Buy Tap Here<br><a href="Le-Big-King.html">Le-Big-King-Burger</a></h3>.
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img class="img" src="Masters-Valides.png" />
+        <figcaption class="model--caption">
+        <h3 class="model-hed"> For Buy Tap Here<br><a href="Master.html">Master-Valides-Burger</a></h3>.
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img src="Bacon-Combo.png" />
+         <figcaption class="model--caption">
+            <h3 class="model-hed"> For Buy Tap Here<br><a href="Bacon-Combo.html">Bacon-Combo</a></h3>.
+        </figcaption>
+      </figure>
+  
+      <figure class="model">
+        <img src="Whopper.png" />
+        <figcaption class="model--caption">
+            <h3 class="model-hed"> For Buy Tap Here<br><a href="Whopper.html">Whopper-Burger</a></h3>.
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img src="Nuggets.png">
+        <figcaption class="model--caption">
+            <h3 class="model-hed"> For Buy Tap Here<br><a href="Nuggets.html">Nuggets-for-Burger</a></h3>.
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img class="img" src="vegie-Double.png" />
+         <figcaption class="model--caption">
+            <h3 class="model-hed"> For Buy Tap Here<br><a href="Vegie-Double.html">Vegie-Double-Burger</a></h3>.
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img class="img" src="Double-Party.png" />
+        <figcaption class="model--caption">
+            <h3 class="model-hed"> For Buy Tap Here<br><a href="Double-Party.html">Double-Party-Cheese</a></h3>.
+        </figcaption>
+      </figure>
+      
+      <figure class="model">
+        <img class="img" src="Vanilleeis_Oliven.png" />
+         <figcaption class="model--caption">
+            <h3 class="model-hed"> For Buy Tap Here<br><a href="Vani.html">Vanilleeis-Oliven-Burger</a></h3>.
+        </figcaption>
+      </figure>
+    </div>
+  </div>s
+</body>
+</html>
